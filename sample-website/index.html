@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body {
+    background-color: seagreen;
+}
+#rightDIV {
+  position: absolute;
+  background-color: coral;
+  color: white;
+  top: 0px;
+  animation: rightmove 3s;
+  animation-fill-mode: forwards;
+  text-align: center;
+
+}
+
+#leftDIV {
+  position: absolute;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  animation: leftmove 3s;
+  bottom: 0px;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes rightmove {
+  from {top: 0px; right: 0px}
+  to {top: 50%;right: 0px}
+}
+@keyframes leftmove {
+from {bottom: 0px;}
+to {bottom: 50%;}
+}
+</style>
+</head>
+<body>
+
+<div>
+    <div id="rightDIV" style="width: 50%"> <h1>WEBSITE</h1></div>
+    <div id="leftDIV" style="width: 50%"> <h1>SAMPLE</h1></div>
+</div>
+
+
+</body>
+</html>
