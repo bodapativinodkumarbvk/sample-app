@@ -7,5 +7,10 @@ pipeline {
         sh 'ls -l'
       }
     }
+    stage ('stage2'){
+      steps {
+        echo "check if get checkout is executed again"
+      }
+    }
   }
 }
